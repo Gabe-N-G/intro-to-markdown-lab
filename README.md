@@ -1,60 +1,9 @@
+![kirby drawing](https://64.media.tumblr.com/3fc8e6b3fb397b57ff216ad9597142ba/tumblr_oghvusSRV91ufr0jio1_400.gif)
 
-![I'm hacker man](https://plus.unsplash.com/premium_photo-1661882403999-46081e67c401?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZ3JhbW1pbmd8ZW58MHx8MHx8fDA%3D)
-# Writing a Function in JavaScript
+# Canvas!
 
-In JavaScript, functions are blocks of reusable code. They allow you to bundle functionality, make it more readable, and avoid repetition. Here's a brief tutorial on writing an arrow function in JavaScript.
+## What is canvas?
 
-1. Basic syntax
+Html canvas is an html element that allows someone to draw items on a plane using numbers and methods. It is most commonly used for making 2d objects, but has other use cases. Also html canvas elements are interactive, and can be manipulated with javascript. 
 
-```javascript
-const functionName = (params) => {
-  // code to be executed
-}
-```
-
-+ **const**: const should be used whenever a function expression is assigned to a variable.
-+ **The function name**: The name you choose for the function.
-+ **Parameters**: Optional comma separated parameters. This is the data passed into the function. If there are no parameters, the () is still required.
-+ **The arrow syntax**: Indicates that this will be a function.
-+ **The body**: The statements that make up the function itself. Surrounded by curly braces.
-
-***Example***:
-
-```javascript
-const greet = (name) => {
-  console.log("Hello, " + name + "!");
-}
-```
-
-> Tip: Functions often perform actions, so naming with a verb can make it clear what the function does. Examples include fetchData( ), calculateArea( ), or printReport( ). 
-
-2. Calling a function
-
-To execute the function, you *call* or *invoke* it by using its name followed by parentheses.
-
-***Example***:
-
-```javascript 
-greet('Alice'); // Outputs: Hello, Alice!
-```
-
-3. Return values
-
-Functions can process data input and output a value using the *return* keyword.
-
-***Example***: 
-
-```javascript
-const addNums = (numA, numB) => {
-  return numA + numB
-}
-
-const total = addNums(2, 4);
-
-console.log(total) // Expected value: 6
-```
-
-For more information on functions and how they are used in JS, check out the MDN docs. 
-[README.md on mdn](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
-
-
+To create a canvas element, simply write in your 
