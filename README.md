@@ -4,6 +4,15 @@
 
 ## What is canvas?
 
-Html canvas is an html element that allows someone to draw items on a plane using numbers and methods. It is most commonly used for making 2d objects, but has other use cases. Also html canvas elements are interactive, and can be manipulated with javascript. 
+Html canvas is an html element that allows someone to draw items on a plane using numbers and methods. It is most commonly used for making 2d objects, but has other use cases. Some of the advantages of using canvas for your graphics are that they are maniuplatable with javascript ineractions within a browser.
 
-To create a canvas element, simply write in your 
+[W3 schools canvas info](https://www.w3schools.com/jsref/api_canvas.asp)
+[MDN canvas info]
+
+To create a canvas element, in html is simply:
+
+```html
+<canvas id="myCanvas" width="200" height="100"></canvas>
+```
+
+id / width / height are optional parameters. If width and height are not specified it will default to 300px wide and 150 px high.
