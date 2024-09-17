@@ -65,9 +65,58 @@ kirb.stroke();
 
 ## Making ovals in canvas
 
-Following our gif at the top of the page, the next stop is to give our kirby eyes. A window to its dark dark soul.
+Following our gif at the top of the page, the next stop is to give our kirby eyes. A window to its pitch black soul.
+
+```javascript
+const eye1 = canvas.getContext("2d");
+
+eye1.beginPath();
+eye1.ellipse(90, 50, 10, 3, Math.PI / 1.95, 0, 2 * Math.PI);
+eye1.fillStyle = "darkblue"
+eye1.stroke();
+eye1.fill()
+
+```
+
+As you can see, this is very similar to our circle code, but with some extra parameters.
+
+They are, in order:
+* x, 
+* y, 
+* radiusX, 
+* radiusY, 
+* rotation, 
+* startAngle, 
+* endAngle, 
 
 
+x and y are the same a the circle, giving a starting point of our ellipse
 
+Radius x/y determines the width/height of the ellipse you are making
+
+rotation is in radians again, for this I just experimented, but you can read up on how to do it correctly.
+
+The start and end angle is the same as a circle because we want to make a full circle.
+
+Now that you know how to make an eye, make a few more eyes, Also you can create the hands and feet using ellipses too!
+
+## Making a half circle
+
+Theres one other special shape that I used to make my kirby, I made a half circle for its mouth. Here is the code, guess if you can see the difference between this and making the other circle.
+
+```javascript
+mouth.beginPath();
+mouth.arc(100, 65, 12, 0, 1 * Math.PI);
+mouth.fillStyle = "red" 
+mouth.fill()
+```
+
+If you guessed the fill being red... you're right, but more importantly look at the start and end angle, I made it end at 1 * Pi to make it a half circle instead of a full circle.
+
+## Finishing it up
+
+Now that we know how to make all the basic shapes, make sure you put them in an order that makes sense. Since javascript reads from top to bottom, you can either put the thigns you want to be seen on top of the other at the bottom of your code or include a z-index property on your shapes.
+
+Enjoy and here is my completed kirby!
 
 [Completed Kirby!](https://codepen.io/MarioBland/pen/ZEdZeJB)
